@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CmpDeepDive
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.0-next.2.
@@ -29,3 +30,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 =======
 # ThirdDemoProject
 >>>>>>> a188fce64a30833787db88a8d043c46228af18f5
+=======
+# ThirdDemoProject
+>>>>>>> 24d36615354974bb4813a0785c9aa934ab8eea40
