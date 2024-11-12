@@ -1,0 +1,24 @@
+
+<!-- // if we have to use host elements as regular elements then we can remove p  tag and simply 
+//place label and ng-content then we need to cange the css also.
+//means in css control we need to replace .control with :host but then it wont work so u need to add back .control as it is and also since we are removing .control
+ in here in html file so we need to add .control in new-ticket.component.html file. -->
+
+
+    <label> {{ label }} </label>  <!-- Display the label passed from the parent -->
+    <ng-content select="input,textarea"></ng-content>  <!-- Project input or textarea -->
+  
+  
+
+  <!-- <p class="control">
+    <label> {{ label }} </label>  --> <!-- Display the label passed from the parent -->
+    <!-- <ng-content select="input,textarea"></ng-content>  -->  <!-- Project input or textarea -->
+  <!-- </p> -->
+
+
+<!-- <p>
+    <label> {{ label() }} </label>
+    <ng-content select="input,textarea"> </ng-content>
+     <input type="text" name="title" id="title"> -->
+    <!-- //since we only dont have input but also text area so here we use ng-content
+</p> - -->

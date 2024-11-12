@@ -1,0 +1,40 @@
+
+
+
+ <span>  <ng-Content/> </span>
+<span class="icon">  <ng-Content select="icon"/> </span>
+
+
+
+
+<!-- 
+<span>  <ng-Content/> </span>
+<span class="icon">  <ng-Content select="icon"
+    >pspr</ng-Content></span>  -->
+    <!-- // so if i am writing like this here means its fall back icon like no specific icon is defined and 
+    only this icon will be displayed in the button. so in header.html we would remove this  -->
+    <!-- <span ngProjectAs="icon"> → </span> --> 
+     <!-- so then it will take from here. -->
+
+
+<!-- <span>  <ng-Content/> </span>
+<span class="icon">  <ng-Content select="icon"/> </span>  -->
+
+<!-- // as you write here like this you should also mention ngProjectAs in 
+the header.html and new-ticket.html so that it will get the content of the icon class and display.so in header.html and new-ticket.html we would place the icon in class -->
+<!-- <span ngProjectAs="icon"> ▶️ </span> -->
+
+
+
+
+<!-- <span>  <ng-Content/> </span>
+<ng-content select=".icon"></ng-content>
+ <span class="icon">  <ng-Content/> </span> --> 
+ <!-- // instead of writing like this,we should
+ write this way so that it will get the content of the icon class and display.so in header.html and new-ticket.html we would place the icon in class
+ but also we get span inside other span> so to avoid this duplication we can write as above code -->
+  <!-- <span class="icon"> → </span> --> 
+   <!-- in header.html and new-ticket.html -->
+
+    <!-- <span>  <ng-Content/> </span>
+    <span class="icon">  <ng-Content/> </span> -->

@@ -1,0 +1,14 @@
+// ngOnInit method will be executed by Angular
+// whenever Angular has initialized this component's inputs.
+// // there is this question like what is the difference between ngOnInit and constructor
+// so ngOnInit is a life cycle hook that is called after Angular has initialized all data-bound properties of a directive.
+// constructor is a default method of the class that is executed when the class is instantiated and ensures proper 
+// initialization of fields in the class and its subclasses.
+// ngOnInit is specifically for initialization work.
+// constructor is for dependency injection.
+
+implementing lifecycle interfaces
+
+here i learned about the interface,means in our case though i wrote ngonInit method and implement the interface still
+it shows error,so to resolve the error we need to import the interface from the angular/core library.
+so it will let us know the error and we can resolve it.

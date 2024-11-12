@@ -1,0 +1,116 @@
+
+    <!-- using two way binding -->
+    <form (ngSubmit)="onSubmit()"#form>
+        <app-control class="control" label="Title" >
+            <input type="text" name="title" id="title" [(ngModel)]="enteredTitle" #input>
+        </app-control>
+    
+        <app-control class="control" label="Reason" >
+            <textarea name="request" id="request" rows="3"   [(ngModel)]="enteredText"  #input></textarea>
+        </app-control>
+
+        <p> <button appButton type="submit"> Submit
+            <span ngProjectAs="icon"> ▶️ </span>
+        </button></p>
+    </form>
+    
+<!-- usinng template variables -->
+    <!-- <form (ngSubmit)="onSubmit(titleInput.value, textInput.value, $event)"#form>
+        <app-control class="control" label="Title">
+            <input type="text" name="title" id="title" #titleInput #input>
+        </app-control>
+    
+        <app-control class="control" label="Reason">
+            <textarea name="request" id="request" rows="3" #textInput #input></textarea>
+        </app-control>
+
+        <p> <button appButton type="submit"> Submit
+            <span ngProjectAs="icon"> ▶️ </span>
+        </button></p>
+    </form> -->
+
+<!-- 
+    And you do store an element in a template variable by adding a special attribute to that element,an attribute that starts with a hashtag.
+    That's important. And then any name of your choice, like titleInput, but this is up to you.
+    The hashtag at the beginning is important though. This creates a template variable and that's a Angular feature where the element to which this variable,    this special attribute here is added,
+    is stored in that variable.
+    
+    And that variable is now available anywhere here in that template, which means we can, for example,pass it to onSubmit without the hashtag here though.
+    
+    The hashtag is just important to create that variable.So you use it when you add it on the elementsthat should be stored in the variable.
+    
+    If you then refer to that element anywhere in your template,
+    
+    you use the variable name without the hashtag,
+    
+    like I'm doing it here.
+    
+    So with that, this input element will be passed
+    
+    as an argument to onSubmit.
+    
+    So to get a better understanding
+    
+    of what exactly is stored in that titleInput thing here,
+    
+    let's go to onSubmit
+    
+    and there, let's accept an argument, a parameter,
+    
+    which I'll name, titleElement, the name is up to you though,
+    
+    and let's set a type for this parameter
+    
+    because since we're using TypeScript, we need
+    
+    to let TypeScript know which kind of value will be received
+    
+    through that parameter.
+    
+    Hence you must add a colon here
+    
+    and then tell TypeScript which type of element that is.
+    
+    And we can see which type of element it is
+    
+    if we go back to the template
+    
+    and we hover over titleInput.
+    
+    Here you see that it's of type HTMLInputElement,
+    
+    which is a type that's built into TypeScript in the end.
+    
+    It is a type that describes the underlying DOM object
+    
+    of such an input element. -->
+
+
+
+
+
+<!-- // so from below code we chnge it into above code,so here we are creating an other component file 
+// and we are using that component file in the new-ticket.html file.
+//then agin after we create first make chnages in control.component.html file and then in new-ticket.html file.
+// so paste the same structure that is common in new-ticket.html file with in <p> </p> then 
+ -->
+<!-- // so while doing this control component when ii tried using signal it does not work so i used app-control @Input(),
+since signals are not used in angular
+@Input() is Angular's official way of passing data from a parent to a child component.
+input.required<String>() is not valid in Angular and doesn't fit the framework's data flow pattern. -->
+
+
+<!-- <form>
+<p>
+    <label> Title </label>
+    <input type="text" name="title" id="title">
+</p>
+<p>
+    <label> Reason </label>
+    <textarea type="text" name="request" id="request"></textarea>
+</p>
+<p> <button appButton> Submit
+     <span ngProjectAs="icon"> ▶️ </span> -->
+<!-- </button></p>
+
+</form>  -->
